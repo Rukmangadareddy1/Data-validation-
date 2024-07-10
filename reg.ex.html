@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    *{
+    background-image:url('download.jpeg');
+    background-size:cover
+
+    }
+    </style>
+
+</head>
+<body>
+<table align="center">
+    <tr>
+    <td>
+        <label>username</label>
+        <input type=text" id="txt1" > </td></tr><br>
+
+    <tr><td align="center">
+<input type="submit" id="btnSub" onclick="validate()"></td><br>
+    </tr>
+</table>
+<script>
+    function validate(){
+    x = document.getElementById("txt1").value
+    reg=/^[A-Z]{1}[A-Za-z]+\s{1}[A-Z]{1}[A-Za-z]+$/
+    if(x.match(reg) == null)
+    {
+    alert("not matching")
+    }
+    else{
+    alert("it is matching")
+    }
+    }
+
+</script>
+</body>
+</html>
